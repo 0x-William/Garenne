@@ -1,0 +1,15 @@
+<nav-header [title]="'game.title' | trans"></nav-header>
+<ion-content>
+
+  <loading-container [loading]="loading" [noShadow]="true">
+
+    <img src="./assets/images/game.png" />
+
+    <div class="container">
+      <div [innerHTML]="content | html"></div>
+    </div>
+
+  </loading-container>
+
+</ion-content>
+  

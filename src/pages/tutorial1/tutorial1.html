@@ -1,0 +1,21 @@
+<nav-header [title]="'tutorial1.title' | trans"></nav-header>
+
+<ion-content>
+
+  <loading-container [loading]="loading">
+
+    <div class="container">
+
+      <div class="content">
+        <img src="./assets/images/bluetooth.png" />
+        <h2>{{'tutorial1.comment' | trans}}</h2>
+      </div>    
+
+      <button ion-button full (click)="goTutorial2()">{{'tutorial1.next' | trans}}</button>
+      <button ion-button full outline (click)="goWelcome()">{{'tutorial1.welcome' | trans}}</button>
+
+    </div>
+
+  </loading-container>
+
+</ion-content>

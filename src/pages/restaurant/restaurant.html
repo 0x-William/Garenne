@@ -1,0 +1,11 @@
+<nav-header [title]="'restaurant.title' | trans"></nav-header>
+<ion-content>
+
+  <loading-container [loading]="loading" [noShadow]="true">
+    
+    <div [innerHTML]="content | html" class="container"></div>
+    
+  </loading-container>
+
+</ion-content>
+  

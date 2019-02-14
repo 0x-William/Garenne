@@ -1,0 +1,25 @@
+page-map {
+  .map-img {
+    position: relative;
+
+    .zoom-icon {
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      margin: 0;
+      padding: 7px;
+      bottom: 0;
+      right: 20px;
+      pointer-events: none;
+      background-color: #f3d58f;
+      border-radius: 9px;
+    }
+  }
+
+  .container {
+    .item {
+      padding: 10px 20px;
+    }
+  }  
+}
+  

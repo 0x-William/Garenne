@@ -1,0 +1,8 @@
+
+<div class="loading-container top-shadow" *ngIf="loading">
+  <ion-spinner></ion-spinner>
+</div>
+
+<div class="{{noShadow ? '' : 'top-shadow'}}" *ngIf="!loading">
+  <ng-content></ng-content>
+</div>

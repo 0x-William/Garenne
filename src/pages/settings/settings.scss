@@ -1,0 +1,19 @@
+page-settings {
+  .container {
+    a, span {
+      width: 100%;
+      margin: 8px 0;
+      display: inline-block;
+      font-weight: 400;
+    }
+
+    h2 + h2 {
+      margin-top: 50px;
+    }
+
+    span + span {
+      margin-left: 10px;
+    }
+  }    
+}
+  

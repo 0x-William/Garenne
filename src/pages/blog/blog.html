@@ -1,0 +1,17 @@
+<nav-header [title]="'blog.title' | trans"></nav-header>
+<ion-content>
+
+  <div class="container top-shadow">
+    
+    <img class="image" src={{blog.path}} />
+    <h3 class="title">{{blog.title}}</h3>
+
+    <div [innerHTML]="blog.content | html" class="content"></div>
+
+    <button ion-button full (click)="goNextBlog()">{{'blog.nextblog' | trans}}</button>
+    <button ion-button full outline (click)="goReturn()">{{'blog.return' | trans}}</button>
+
+  </div>
+
+</ion-content>
+  

@@ -1,0 +1,16 @@
+page-animal {
+  .container {
+    .name {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .content {
+      a {
+        text-decoration: none;
+        pointer-events: none;
+      }
+    }
+  }  
+}
+  

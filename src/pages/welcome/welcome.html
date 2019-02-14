@@ -1,0 +1,25 @@
+<nav-header [title]="'welcome.title' | trans"></nav-header>
+
+<ion-content>
+
+  <loading-container [loading]="loading">
+
+    <div class="container map-img">
+      <img src={{imageUrl}} />
+      <button ion-button (click)="goMap()">
+        <img src="./assets/images/zoom.png" />
+      </button>
+    </div>
+  
+    <div class="container top-shadow">
+      <button ion-button full outline menuToggle="left">{{'welcome.menu' | trans}}</button>
+      <button ion-button full (click)="goAnimals()">{{'welcome.animals' | trans}}</button>
+      <button ion-button full (click)="goGame()">{{'welcome.game' | trans}}</button>
+      <button ion-button full (click)="goMissions()">{{'welcome.missaions' | trans}}</button>
+      <button ion-button full (click)="goEvents()">{{'welcome.events' | trans}}</button>
+    </div>
+
+  </loading-container>
+
+</ion-content>
+  

@@ -1,0 +1,15 @@
+<nav-header [title]="'animallist.title' | trans"></nav-header>
+<ion-content>
+
+    <loading-container [loading]="loading">
+      
+      <div class="content">
+        <a *ngFor="let item of animals; let id=index" (click)="goAnimal(id)" class="bottom-line">
+          {{item.name}}
+        </a>
+      </div>
+  
+    </loading-container>
+
+</ion-content>
+  

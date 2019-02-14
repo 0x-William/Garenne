@@ -1,0 +1,16 @@
+<nav-header [title]="'settings.title' | trans"></nav-header>
+<ion-content>
+
+  <div class="top-shadow container">
+
+    <h2>Support</h2>
+    <div><a (click)="activateAll()">{{'settings.all' | trans}}</a></div>
+    <div><a (click)="resetApplications()">{{'settings.reset' | trans}}</a></div>
+
+    <h2>Appplication</h2>
+    <div><span>{{'settings.visit' | trans}} {{' '}} {{lastVisit}}</span></div>
+    <div><span>Version 1.0.0</span></div>
+
+  </div>
+
+</ion-content>

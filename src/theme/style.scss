@@ -1,0 +1,175 @@
+h1, h2, h3, h4, h5, h6 {
+  color: $title-color;
+}
+
+ion-header {
+  box-shadow: 0px -40px 40px 40px rgba(0, 0, 0, 0.1);
+
+  .toolbar {
+    min-height: 64px !important;
+  
+    .toolbar-background {
+      background-color: #fff;
+      border: none !important;
+    }
+  
+    .bar-button {
+      height: 34px;
+      img {
+        height: 34px;
+      }
+    }
+  
+    .toolbar-title {
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+
+  /* ios */
+  .toolbar-ios {
+    min-height: calc(64px + 20px) !important;
+    padding-top: calc(20px + 4px);
+
+    .title-ios {
+      height: calc(64px + 20px) !important;
+      min-height: calc(64px + 20px) !important;
+      padding-top: 20px;
+    }
+  }
+
+  /* android */
+  ion-navbar {
+    .toolbar-title-md {
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+ion-header.header-md::after {
+  background-image: none;
+}
+
+
+ion-content.content-ios > div {
+  margin-top: calc(64px + 20px);
+}
+
+ion-content.content-md > div {
+  margin-top: 64px;
+}
+
+ion-content {
+  .button {
+    border-radius: 9px !important;
+    min-height: 3.3em;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  .button-md {
+    box-shadow: none;
+    text-transform: none;
+  }
+
+  .button-default {
+    color: #fff;
+  }
+
+  .button-outline {
+    border-width: 1px !important;
+    background-color: #fff !important;
+    color: $title-color !important;
+  }
+
+  .button-outline:active {
+    background-color: #f7f7f7 !important;
+  }
+
+  /* custom */
+
+  // color: $text-color;
+  font-size: $font-size;
+  font-weight: 300;
+
+  a {
+    display: block;
+    color: $text-color;
+    font-size: $font-size;
+    font-weight: 300;
+  }
+
+  .container {
+    padding: 25px;
+
+    > hr {
+      margin: 0 -25px 0 -25px;
+    }
+
+    figure {
+      margin: 20px 0;
+    }
+
+    ul li {
+      // list-style-image: url('./assets/image/minus.png');
+    }
+
+    iframe {
+      width: 100% !important;
+    }
+  }
+
+  .top-shadow {
+    // box-shadow: inset 0px 40px 40px -40px rgba(0,0,0,0.1);
+  }
+
+  .bottom-line {
+    border-bottom: 1px solid #f4f4f4;
+  }
+
+  .point {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #d91c5b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+
+}
+
+/* image viewer */
+
+image-viewer {
+  ion-navbar .bar-button-default {
+    color: #000 !important;
+  }
+  ion-backdrop {
+    background-color: #fff;
+  }
+}
+
+.md  {
+  image-viewer.ion-page {
+    .image-wrapper {
+      margin-top: 64px !important;
+    }
+  }
+}
+
+.ios  {
+  image-viewer.ion-page {
+    .image-wrapper {
+      margin-top: calc(64px + 20px);
+    }
+  }
+}

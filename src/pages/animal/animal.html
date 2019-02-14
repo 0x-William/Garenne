@@ -1,0 +1,14 @@
+<nav-header [title]="'animal.title' | trans"></nav-header>
+<ion-content>
+
+  <div class="container top-shadow">
+      
+      <h1 class="name">{{animal.name}}</h1>
+  
+      <div [innerHTML]="animal.content | html" class="content"></div>
+  
+      <button ion-button full (click)="goReturn()">{{'animal.return' | trans}}</button>
+  
+    </div>
+
+</ion-content>

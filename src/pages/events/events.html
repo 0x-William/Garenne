@@ -1,0 +1,19 @@
+<nav-header [title]="'events.title' | trans"></nav-header>
+<ion-content>
+
+  <div class="container top-shadow">
+
+    <h3 class="title">{{'events.comment' | trans}}</h3>
+  
+    <div class="item bottom-line" *ngFor="let item of events">
+      <div class="hour">{{item.hour}}</div>
+      <div class="content">
+        {{item.name}}
+        <div class="point">{{item.number}}</div>
+      </div>          
+    </div>
+
+  </div>
+
+</ion-content>
+  

@@ -1,0 +1,19 @@
+<nav-header [title]="'bloglist.title' | trans"></nav-header>
+
+<ion-content>
+
+  <loading-container [loading]="loading">
+
+    <div class="container">
+        <div class="item" *ngFor="let item of blogs; let id=index">
+          <img src={{item.path}} class="bottom-line"/>
+          <div class="title">{{item.title}}</div>
+          <button ion-button full (click)="goBlog(id)">{{'bloglist.button' | trans}}</button>
+        </div>
+    </div>
+    
+
+  </loading-container>
+
+</ion-content>
+  

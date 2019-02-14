@@ -1,0 +1,42 @@
+<ion-menu swipeEnabled="false" [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title><h3>{{leftMenuTitle | trans}}</h3></ion-title>
+      <button ion-button menuToggle="left" end>
+        <img src="./assets/images/close.png" />
+      </button>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div class="top-shadow">
+      <a menuClose *ngFor="let item of leftMenus" (click)="openPage(item)" class="bottom-line">
+        {{item.title | trans}}
+      </a>
+    </div>
+  </ion-content>
+
+</ion-menu>
+
+<ion-menu swipeEnabled="false" [content]="content" side="right">
+  <ion-header>
+    <ion-toolbar>
+      <button ion-button menuToggle="right">
+        <img src="./assets/images/close.png" />
+      </button>
+      <ion-title><h3>{{rightMenuTitle | trans}}</h3></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div class="top-shadow">
+      <a menuClose="right" *ngFor="let item of rightMenus" (click)="openPoint(item.point)" class="bottom-line menu-item">
+        <div class="point">{{item.point}}</div>
+        <span>{{item.title}}</span>
+      </a>
+    </div>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

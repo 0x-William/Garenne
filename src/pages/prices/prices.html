@@ -1,0 +1,10 @@
+<nav-header [title]="'prices.title' | trans"></nav-header>
+<ion-content>
+
+  <loading-container [loading]="loading">
+      
+    <div [innerHTML]="content | html" class="container"></div>
+
+  </loading-container>
+
+</ion-content>

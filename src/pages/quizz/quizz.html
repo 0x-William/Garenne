@@ -1,0 +1,21 @@
+<nav-header [title]="'quizz.title' | trans"></nav-header>
+<ion-content>
+
+  <loading-container [loading]="loading">
+
+    <div class="container status{{status}}">
+      <h3>{{beacon.question}}</h3>
+      <div>
+        <a (click)="answer(1)" class="{{beacon.correct==1 ? 'correct' : 'incorrect'}}">{{beacon.answer_1}}</a>
+        <a (click)="answer(2)" class="{{beacon.correct==2 ? 'correct' : 'incorrect'}}">{{beacon.answer_2}}</a>
+      </div>
+      <div>
+        <a (click)="answer(3)" class="{{beacon.correct==3 ? 'correct' : 'incorrect'}}">{{beacon.answer_3}}</a>
+        <a (click)="answer(4)" class="{{beacon.correct==4 ? 'correct' : 'incorrect'}}">{{beacon.answer_4}}</a>
+      </div>
+      <span *ngIf="status!=0">{{beacon.information}}</span>
+    </div>
+
+  </loading-container>
+
+</ion-content>

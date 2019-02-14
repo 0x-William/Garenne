@@ -1,0 +1,124 @@
+{
+  "menu": {
+    "left": {
+      "title": "Menu",
+      "welcome": "Accueil",
+      "plan": "Plan du parc",
+      "schedule": "Horaires",
+      "prices": "Tarifs",
+      "reglement": "Règlement",
+      "restaurant": "Restauration",
+      "news": "Actualités",
+      "contacts": "Contact",
+      "impressum": "Impressum",
+      "settings": "Paramètres"
+    },
+    "right": {
+      "title": "Jeu'Garenne"
+    }    
+  },
+  "tutorial1": {
+    "title": "Visite guidée",
+    "comment": "Activez votre Bluetooth pour pouvoir localiser les balises.",
+    "next": "Prochaine étape",
+    "welcome": "Passer le tutoriel"
+  },
+  "tutorial2": {
+    "title": "Visite guidée",
+    "comment": "Des notifications push vous seront envoyées lorsque vous serez près d'une balise.",
+    "welcome": "OK! J'ai compris"
+  },
+  "welcome": {
+    "title": "La Garenne",
+    "menu": "Menu",
+    "animals": "Animaux",
+    "game": "Jeu'Garenne",
+    "missaions": "Missions",
+    "events": "Événements"
+  },
+  "map": {
+    "title": "Plan du parc"
+  },
+  "events": {
+    "title": "Événements",
+    "comment": "Heures de repas des animaux"
+  },
+  "bloglist": {
+    "title": "Actualités",
+    "button": "En savoir plus"
+  },
+  "blog": {
+    "title": "Actualités",
+    "nextblog": "Voir le prochain article",
+    "return": "Retour"
+  },
+  "contact": {
+    "title": "Contact",
+    "address": "La Garenne\nRoute du Bois-Laurent1\n1261 Le Vaud",
+    "phonenumber": "+41 22 366 11 14",
+    "email": "lagarenne@lagarenne.ch"
+  },
+  "impressum": {
+    "title": "Impressum"
+  },
+
+  "animallist": {
+    "title": "Jeu'Garenne"
+  },
+
+  "animal": {
+    "title": "Animaux",
+    "return": "Retour à la liste"
+  },
+
+  "restaurant": {
+    "title": "Restauration"
+  },
+
+  "missions": {
+    "title": "Missions"
+  },
+
+  "reglement": {
+    "title": "Règlement"
+  },
+  
+  "hours": {
+    "title": "Horaires"
+  },
+  
+  "prices": {
+    "title": "Tarifs"
+  },
+
+  "game": {
+    "title": "Jeu’Garenne",
+    "ok": "OK! J'ai compris"
+  },
+
+  "quizz": {
+    "title": "Jeu'Garenne"
+  },
+
+  "settings": {
+    "title": "Paramètres",
+    "all": "Activer tous les points",
+    "reset": "Ré́initialiser l’application",
+    "visit": "Dernière visite:"
+  },
+
+  "dialogs":{
+    "point": "Vous approchez d'un point!",
+    "add": "Ajouter au menu",
+    "read": "Lire maintenant",
+    "ok": "Ok",
+    "d1":{
+      "title": "Points activés",
+      "content": "Tous les points ont été activés et sont maintenant disponibles dans le menu."
+    },
+    "d2":{
+        "title": "Application réinitialisée",
+        "content": "Il est recommandé de fermer et de ré-ouvrir l'application pour profiter pleinement de toutes ses fonctionnalités."
+    }
+  }
+}
